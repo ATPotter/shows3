@@ -1,0 +1,22 @@
+<p>{{showInfo.showTitle}}  ({{showInfo.showNumber}})  </p>
+
+
+<div [innerHTML]="showHtml.top"></div>
+
+<h3>Photos</h3>
+
+<div *ngFor="let photoblock of showPhotos">
+  <h4>{{photoblock.description}}</h4>
+
+  <ul>
+    <li *ngFor="let photo of photoblock.photographs">
+      <a href="http://www.thepotters.org.uk/alan/shows/{{photo.fullsize}}">{{photo.title}}, {{photo.thumbnail}}</a>
+    </li>
+
+  </ul>
+
+</div>
+
+
+<div [innerHTML]="showHtml.bottom"></div>
+

@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="jumbotron text-center">
+    <h1>
+      <span translate>APP_NAME</span>
+    </h1>
+    <p>
+      <i class="fa fa-bookmark-o"></i> <span translate>Shows List Version</span> {{version}}
+    </p>
+  </div>
+  
+
+  <div>
+
+     <table width="100%">
+      <tr *ngFor="let show of myShows">
+        <td>{{show.showDate}}</td>
+        <td>
+          <a href="oneShow/{{show.showNumber}}">{{show.showTitle}}</a>
+        </td>
+
+        <td>
+          <div *ngIf="!show.clubUrl">{{show.clubName}}</div>
+          <div *ngIf="show.clubUrl"><a href="{{show.clubUrl}}">{{show.clubName}}</a></div>
+        </td>
+        <td></td>
+      </tr>
+    </table> 
+  </div>
+
+
+
+</div>
+N
