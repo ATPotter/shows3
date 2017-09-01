@@ -1,0 +1,38 @@
+p {
+    padding: 10px;
+    margin-top: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 10px;
+}
+
+
+/*
+ * The pod is normally just under 1/3 of the available width.
+ * Cols 2 & 3 each get a 1.5% left margin to act as gutter
+ * Col 1 doesn't get that margin (that's the nth-child directive')
+ * 2 * (32.3+1.5) + 32.3 = 99.9%
+ */
+
+
+
+img {
+    max-width: 100%;
+    vertical-align:bottom;
+    border-radius: 3px 3px 0 0;
+    margin-top: 15px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    padding-bottom: 6px;
+    overflow: hidden;
+}
+
+p {
+    padding: 10px;
+    margin-top: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 10px;
+}
